@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+
+#mensaje{
+    color: #ffffff;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+
+.container {
+    max-width: 1200px;
+    width: 95%;
+    margin: 20px auto;
+    background-color: white;
+    border: 12px solid #8b1e1e;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* MENÚ SUPERIOR HOME */
+.menu-superior {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.menu-superior li {
+    list-style: none;
+}
+
+.link-icono {
+    text-decoration: none;
+}
+
+.menu-superior i {
+    font-size: 28px;
+    color: #8b1e1e;
+}
+
+/* BANNER HOME */
+.banner {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.banner img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(70%);
+    border-radius: 20px;
+}
+
+.contenido-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+    max-width: 700px;
+}
+
+.contenido-banner h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.contenido-banner p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.contenido-banner button {
+    background-color: #8b1e1e;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contenido-banner button:hover {
+    background-color: #a52a2a;
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+.menu-inferior {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 20px 0 0 0;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu-inferior li {
+    font-size: 18px;
+    color: #222;
+}
+
+.menu-inferior i {
+    color: #8b1e1e;
+    margin-right: 6px;
+}
+
+/* BARRA SUPERIOR ARTES Y LITERATURA */
+.barra-superior {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.barra-superior input {
+    flex: 1;
+    background-color: #8b1e1e;
+    color: white;
+    border: none;
+    padding: 14px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.barra-superior input::placeholder {
+    color: #f3dede;
+}
+
+.icono-inicio,
+.icono-seccion {
+    text-decoration: none;
+}
+
+.icono-inicio i,
+.icono-seccion i {
+    font-size: 28px;
+    color: #8b1e1e;
+}
+
+/* BANNER ARTES Y LITERATURA */
+.banner-artes {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.banner-artes img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(75%);
+    border-radius: 20px;
+}
+
+.contenido-banner-artes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 80%;
+}
+
+.contenido-banner-artes h1 {
+    margin: 0;
+    font-size: 46px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+/* LISTAS */
+.lista-artes {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.tarjeta {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 16px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.icono-tarjeta {
+    min-width: 52px;
+    width: 52px;
+    height: 52px;
+    background-color: #8b1e1e;
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icono-tarjeta i {
+    color: white;
+    font-size: 26px;
+}
+
+.contenido-tarjeta {
+    flex: 1;
+}
+
+.contenido-tarjeta h2 {
+    margin: 0 0 6px 0;
+    font-size: 28px;
+    color: #222;
+}
+
+.categoria {
+    margin: 0 0 8px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.contenido-tarjeta p {
+    margin: 0;
+    color: #444;
+    line-height: 1.4;
+}
+
+.valoracion {
+    min-width: 110px;
+    text-align: right;
+    color: #6b5b95;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+/* RESPONSIVE BÁSICO */
+@media (max-width: 768px) {
+    .contenido-banner h1 {
+        font-size: 28px;
+    }
+
+    .contenido-banner-artes h1 {
+        font-size: 32px;
+    }
+
+    .barra-superior {
+        flex-wrap: wrap;
+    }
+
+    .tarjeta {
+        flex-direction: column;
+    }
+
+    .valoracion {
+        text-align: left;
+    }
+
+    .menu-inferior {
+        flex-direction: column;
+        align-items: center;
+    }
+}

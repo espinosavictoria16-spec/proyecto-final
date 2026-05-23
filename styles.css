@@ -14,8 +14,8 @@ body {
 
 .container {
     max-width: 1200px;
-    width: 95%;
-    margin: 20px auto;
+    width: 100%;
+    min-height: 100vh;
     background-color: white;
     border: 12px solid #8b1e1e;
     border-radius: 20px;
@@ -55,7 +55,7 @@ body {
 
 .banner img {
     width: 100%;
-    height: 430px;
+    height: 500px;
     object-fit: cover;
     display: block;
     filter: brightness(70%);
@@ -259,6 +259,16 @@ body {
     .contenido-banner h1 {
         font-size: 28px;
     }
+@media (max-width: 768px){
+
+    .banner img{
+        height: 250px;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
 
     .contenido-banner-artes h1 {
         font-size: 32px;
@@ -280,4 +290,5 @@ body {
         flex-direction: column;
         align-items: center;
     }
+}
 }

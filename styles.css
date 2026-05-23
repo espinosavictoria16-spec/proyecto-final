@@ -13,7 +13,7 @@ body {
 
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     width: 100%;
     min-height: 100vh;
     background-color: white;
@@ -21,6 +21,7 @@ body {
     border-radius: 20px;
     padding: 20px;
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
 /* MENÚ SUPERIOR HOME */
@@ -253,42 +254,35 @@ body {
     font-size: 18px;
     white-space: nowrap;
 }
-
-/* RESPONSIVE BÁSICO */
-@media (max-width: 768px) {
-    .contenido-banner h1 {
-        font-size: 28px;
-    }
+/* RESPONSIVE */
 @media (max-width: 768px){
 
     .banner img{
         height: 250px;
     }
 
-    h1{
-        font-size: 2rem;
+    .contenido-banner h1{
+        font-size: 28px;
     }
 
-
-    .contenido-banner-artes h1 {
+    .contenido-banner-artes h1{
         font-size: 32px;
     }
 
-    .barra-superior {
+    .barra-superior{
         flex-wrap: wrap;
     }
 
-    .tarjeta {
+    .tarjeta{
         flex-direction: column;
     }
 
-    .valoracion {
+    .valoracion{
         text-align: left;
     }
 
-    .menu-inferior {
+    .menu-inferior{
         flex-direction: column;
         align-items: center;
     }
-}
 }

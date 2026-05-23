@@ -13,8 +13,7 @@ body {
 
 
 .container {
-    max-width: 1400px;
-    width: 100%;
+    width: 98%;
     min-height: 100vh;
     background-color: white;
     border: 12px solid #8b1e1e;

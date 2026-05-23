@@ -13,7 +13,8 @@ body {
 
 
 .container {
-    width: 98%;
+    max-width: 1400px;
+    width: 95%;
     min-height: 100vh;
     background-color: white;
     border: 12px solid #8b1e1e;
@@ -55,7 +56,7 @@ body {
 
 .banner img {
     width: 100%;
-    height: 600px;
+    height: 450px;
     object-fit: cover;
     display: block;
     filter: brightness(70%);
@@ -257,31 +258,15 @@ body {
 @media (max-width: 768px){
 
     .banner img{
-        height: 450px;
+        height: 350px;
     }
 
     .contenido-banner h1{
-        font-size: 28px;
+        font-size: 22px;
     }
 
-    .contenido-banner-artes h1{
-        font-size: 32px;
+    #mensaje{
+        font-size: 18px;
     }
 
-    .barra-superior{
-        flex-wrap: wrap;
-    }
-
-    .tarjeta{
-        flex-direction: column;
-    }
-
-    .valoracion{
-        text-align: left;
-    }
-
-    .menu-inferior{
-        flex-direction: column;
-        align-items: center;
-    }
 }
